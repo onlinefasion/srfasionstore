@@ -3,291 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SR FASHION STORE | Premium Fashion Destination</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <style>
-        :root {
-            --primary: #ff6b6b;
-            --secondary: #794afa;
-            --dark: #1e1e1e;
-            --light: #f8f9fa;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        /* Navbar */
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.8rem;
-        }
-        
-        .nav-link {
-            font-weight: 500;
-        }
-        
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.7), url('assets/images/hero-bg.jpg');
-            background-size: cover;
-            height: 80vh;
-        }
-        
-        /* Product Cards */
-        .product-card {
-            transition: transform 0.3s;
-            border: 1px solid #eee;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .product-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        
-        /* Sections */
-        .section-title {
-            position: relative;
-            padding-bottom: 15px;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 80px;
-            height: 3px;
-            background: var(--primary);
-        }
-    </style>
+    <title>SR FASHION | Luxury Fashion Destination</title>
+    
+    <!-- Premium Assets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+<body class="premium-theme">
+    <!-- Loading Screen -->
+    <div class="page-loader">
+        <div class="loader-logo">SR FASHION</div>
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Glass Morphism Navbar -->
+    <nav class="navbar-glass">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span style="color: var(--primary);">SR</span> FASHION
-            </a>
+            <a href="index.html" class="brand-logo">SR <span>FASHION</span></a>
             
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                            Shop
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="men.html">Men's Collection</a></li>
-                            <li><a class="dropdown-item" href="women.html">Women's Collection</a></li>
-                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="view-all.html">View All Products</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                
-                <div class="d-flex">
-                    <a href="cart.html" class="btn btn-outline-dark position-relative">
-                        <i class="fas fa-shopping-bag"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
-                    </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Collections <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="men.html">Men's Luxury</a>
+                        <a href="women.html">Women's Elegance</a>
+                        <a href="accessories.html">Premium Accessories</a>
+                    </div>
                 </div>
+                <a href="view-all.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="nav-icons">
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center">
-        <div class="container text-white text-center">
-            <h1 class="display-3 fw-bold mb-4">New Summer Collection</h1>
-            <p class="lead mb-5">Discover the latest trends in fashion</p>
-            <a href="men.html" class="btn btn-primary btn-lg px-4 me-2">Shop Men</a>
-            <a href="women.html" class="btn btn-outline-light btn-lg px-4">Shop Women</a>
+    <!-- 3D Hero Carousel -->
+    <section class="hero-3d-carousel">
+        <div class="hero-slide active" style="background-image: url('assets/images/hero/1.jpg')">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInUp">Summer Luxury Collection</h1>
+                <a href="men.html" class="btn-gold">Explore Now</a>
+            </div>
+        </div>
+        <!-- More slides -->
+    </section>
+
+    <!-- Luxury Categories -->
+    <section class="luxury-categories">
+        <div class="category-card" onclick="location.href='men.html'">
+            <img src="assets/images/men/category-bg.jpg" alt="Men's Luxury">
+            <div class="category-overlay">
+                <h3>Men's Premium</h3>
+                <p>Handcrafted Elegance</p>
+            </div>
+        </div>
+        <!-- Women & Accessories categories -->
+    </section>
+
+    <!-- Curated Products -->
+    <section class="curated-products">
+        <div class="section-header">
+            <h2>Editor's Selection</h2>
+            <a href="view-all.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-product-id="101">
+                <div class="product-badge">Limited</div>
+                <img src="assets/images/men/1.jpg" class="product-image" alt="Luxury Shirt">
+                <div class="product-details">
+                    <h3>Silk Premium Shirt</h3>
+                    <div class="price">₹8,999 <span class="old-price">₹12,999</span></div>
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- More products -->
         </div>
     </section>
 
-    <!-- Featured Categories -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Shop By Category</h2>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card border-0 rounded-0 position-relative category-card">
-                        <img src="assets/images/men-category.jpg" class="card-img-top" alt="Men's Fashion">
-                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                            <a href="men.html" class="btn btn-light btn-lg px-4">Men's Collection</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card border-0 rounded-0 position-relative category-card">
-                        <img src="assets/images/women-category.jpg" class="card-img-top" alt="Women's Fashion">
-                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                            <a href="women.html" class="btn btn-light btn-lg px-4">Women's Collection</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card border-0 rounded-0 position-relative category-card">
-                        <img src="assets/images/accessories-category.jpg" class="card-img-top" alt="Accessories">
-                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                            <a href="accessories.html" class="btn btn-light btn-lg px-4">Accessories</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <h2>Follow Us @SRFashion</h2>
+        <div class="feed-grid">
+            <!-- Instagram posts -->
         </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Featured Products</h2>
-            
-            <div class="row g-4">
-                <!-- Product 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card product-card h-100 border-0">
-                        <span class="product-badge badge bg-danger">-30%</span>
-                        <img src="assets/images/products/men-shirt.jpg" class="card-img-top" alt="Men's Shirt">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Men's Formal Shirt</h5>
-                            <p class="card-text text-primary fw-bold">₹799 <span class="text-decoration-line-through text-muted">₹1,199</span></p>
-                            <button class="btn btn-sm btn-outline-dark me-2"><i class="far fa-heart"></i></button>
-                            <button class="btn btn-sm btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card product-card h-100 border-0">
-                        <img src="assets/images/products/women-dress.jpg" class="card-img-top" alt="Women's Dress">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Women's Summer Dress</h5>
-                            <p class="card-text text-primary fw-bold">₹1,299</p>
-                            <button class="btn btn-sm btn-outline-dark me-2"><i class="far fa-heart"></i></button>
-                            <button class="btn btn-sm btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card product-card h-100 border-0">
-                        <span class="product-badge badge bg-success">New</span>
-                        <img src="assets/images/products/men-watch.jpg" class="card-img-top" alt="Men's Watch">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Premium Watch</h5>
-                            <p class="card-text text-primary fw-bold">₹2,499</p>
-                            <button class="btn btn-sm btn-outline-dark me-2"><i class="far fa-heart"></i></button>
-                            <button class="btn btn-sm btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card product-card h-100 border-0">
-                        <img src="assets/images/products/women-bag.jpg" class="card-img-top" alt="Women's Bag">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Designer Handbag</h5>
-                            <p class="card-text text-primary fw-bold">₹1,799</p>
-                            <button class="btn btn-sm btn-outline-dark me-2"><i class="far fa-heart"></i></button>
-                            <button class="btn btn-sm btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="view-all.html" class="btn btn-outline-primary px-4">View All Products</a>
-            </div>
+    <!-- Premium Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-main">
+            <!-- Footer content -->
         </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-5 bg-dark text-white">
-        <div class="container text-center">
-            <h2 class="mb-4">Need Help With Your Order?</h2>
-            <a href="contact.html" class="btn btn-light px-4 me-2">Contact Us</a>
-            <a href="tel:+919876543210" class="btn btn-outline-light px-4"><i class="fas fa-phone me-2"></i> Call Now</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">SR FASHION STORE</h5>
-                    <p>India's premium fashion destination for men and women. Quality products at affordable prices.</p>
-                </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="mb-4">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
-                        <li class="mb-2"><a href="men.html" class="text-white-50">Men</a></li>
-                        <li class="mb-2"><a href="women.html" class="text-white-50">Women</a></li>
-                        <li class="mb-2"><a href="accessories.html" class="text-white-50">Accessories</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="mb-4">Contact Info</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Fashion St, Mumbai</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 9876543210</li>
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@srfashion.com</li>
-                        <li class="mb-2"><i class="fas fa-wallet me-2"></i> UPI: srfashion@upi</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <hr class="my-4 bg-secondary">
-            
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0 small">&copy; 2023 SR FASHION STORE. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white-50 small me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white-50 small me-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white-50 small"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+        <div class="footer-copyright">
+            © 2023 SR FASHION | Luxury Fashion House
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script>
-        // Cart functionality
-        function addToCart(productId, productName, price) {
-            alert(productName + " added to cart!");
-            // In real implementation, update cart count here
-        }
-    </script>
+    <!-- Newsletter Modal -->
+    <div class="newsletter-modal">
+        <!-- Modal content -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
 </body>
 </html>
